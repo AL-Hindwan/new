@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+     <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/aos.css">
+    <link rel="stylesheet" href="./src/css/swip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header"></div>
+
+
+
+<main>
+    <div class="details_container" id="details">
+   
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./src/images/foto_upload_3402168404.jpg" alt="" ></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+   
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="line"></div>
+<h2>افتتاح قسم الأشعة الجديد</h2>
+<p >
+   
+10 يوليو 2025 – صنعاء
+يسر عيادة الشفاء الطبية أن تعلن عن افتتاح قسم الأشعة والتصوير الطبي الحديث ضمن جهودها المستمرة لتوسيع نطاق خدماتها وتحسين جودة الرعاية الصحية المقدمة للمرضى.
+يأتي افتتاح هذا القسم ليواكب التطورات الطبية الحديثة، ويضم أحدث أجهزة التصوير بالأشعة مثل:
+.الأشعة السينية الرقمية (Digital X-Ray)
+.الموجات فوق الصوتية (Ultrasound)
+.أشعة الأسنان البانورامية
+
+ويتميز القسم بتجهيزه وفق أعلى معايير السلامة والدقة، وبإشراف فريق مؤهل من فنيي الأشعة المتخصصين.
+ وقال الدكتور أحمد العزي، المدير الطبي للعيادة: "نهدف من خلال هذا التوسع إلى تقديم خدمات تشخيصية متقدمة تساعد في الكشف المبكر والدقيق عن مختلف الحالات المرضية، بما يسهم في تحسين نتائج العلاج وتقليل مدة التعافي."
+
+ مميزات قسم الأشعة:
+تقارير دقيقة وسريعة
+خصوصية عالية للمرضى
+ارتباط مباشر مع الطبيب المعالج ضمن نظام إلكتروني موحد
+
+ أوقات العمل:
+قسم الأشعة يعمل خلال ساعات العيادة الرسمية: من السبت إلى الخميس، من 8 صباحًا حتى 9 مساءً
+</p>
+
+   
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+
+
+
+
+     <script src="./src/js/swiper-bundle.min.js"></script>
+  <script src="./src/js/swiper-element-bundle.min.js"></script>
+  <script src="./src/js/aos.js"></script>
+  <script>
+    fetch("./compnant/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+        AOS.init(); // Initialize AOS after loading the header
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+  <script>
+    fetch("./compnant/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  
+  <script src="./src/js/main.js"></script>
+</body>
+</html>

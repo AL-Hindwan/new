@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+      <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/css/aos.css">
+    <link rel="stylesheet" href="./src/css/swip.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    
+    <div id="header"></div>
+    
+
+    <main>
+        <h2 class="heads" > اخر الأخبار </h2>
+
+<div class="container2">
+  <div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href="./details.html#datails"> التفاصيل</a>
+</div>
+
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+<div class="news_shape" data-aos="fade-up" data-aos-duration="1000">
+    <img src="./src/images/foto_upload_3402168404.jpg" alt="">
+    <p class="title">افتتاح قسم الأشعة الجديد</p>
+    <p class="text">تم تدشين قسم الأشعة الجديد بأحدث الأجهزة لتوفير خدمة دقيقة وسريعة للمراجعين.</p>
+    <p class="date">10 يوليو 2025</p>
+    <a href=""> التفاصيل</a>
+</div>
+</div>
+
+ 
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <div id="footer"></div>
+
+  
+  <script src="./src/js/swiper-bundle.min.js"></script>
+  <script src="./src/js/swiper-element-bundle.min.js"></script>
+  <script src="./src/js/aos.js"></script>
+  <script>
+    fetch("./compnant/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+        AOS.init(); // Initialize AOS after loading the header
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+  <script>
+    fetch("./compnant/footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  
+  <script src="./src/js/main.js"></script>
+</body>
+</html>
