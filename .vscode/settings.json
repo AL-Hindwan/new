@@ -1,0 +1,9 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "php": true,
+        "plaintext": true,
+        "blade": true
+    }
+}
